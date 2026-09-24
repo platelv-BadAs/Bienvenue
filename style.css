@@ -3,3 +3,5 @@
 .author-photo{display:block;width:180px;max-width:45vw;height:auto;margin:20px auto 28px;border:1px solid #d7c49b}.author-text{max-width:900px;font-size:18px}.author-text p{text-align:justify;text-justify:inter-word;hyphens:auto;word-break:normal;overflow-wrap:break-word}.author-text a{color:var(--turquoise);font-weight:700}.author-text a:hover{color:var(--orange)}.author-signature{text-align:right!important;font-size:22px;font-weight:700;margin:28px 12% 28px 0}.author-video{max-width:900px;margin-top:30px}.author-video video,.author-video iframe{width:100%;height:auto;aspect-ratio:16/9;border:0;display:block}
 @media(max-width:520px){.author-photo{width:140px;max-width:50vw}.author-text p{text-align:justify;text-justify:inter-word}}
 .author-text .author-role{text-align:center!important;margin-top:0;margin-bottom:28px}
+/* Author portrait: centered within the same text column */
+.author .author-photo{display:block;margin:20px auto 16px!important}.author .author-text{margin-left:auto;margin-right:auto}.author .author-text .author-role{text-align:center!important;margin:0 auto 28px!important}
