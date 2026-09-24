@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="top"><a class="brand brand-logo" href="#accueil" aria-label="Les Bad As — Accueil"><img src="logo.jpg" alt="Logo Les Bad As"></a><button class="menu" aria-label="Menu">☰</button>
-<nav><a href="#accueil">Accueil</a><a href="#serie">La série</a><a href="#personnages">Les Personnages</a><a href="#episodes">Les épisodes</a><a href="#bonus">Bonus</a><a href="#galerie">Galerie Photos</a><a href="#auteur">L’auteur</a><a href="#faq">FAQ</a></nav></header>
+<nav><a href="#accueil">Accueil</a><a href="#serie">La série</a><a href="#personnages">Les Personnages</a><a href="#episodes">Les épisodes</a><a href="#bonus">Bonus</a><a href="#galerie">Galerie Photos</a><a href="#auteur">L’auteur</a><a href="#faq">FAQ</a></nav><button class="theme-toggle" type="button" aria-label="Changer le thème" aria-pressed="false"><span>☀ Clair</span><span>☾ Foncé</span></button></header>
 <main>
 <section id="accueil" class="hero"><div class="hero-img"><img src="home.png" alt="Les quatre héroïnes de BAD AS devant leur voiture"></div>
 <div class="hero-copy"><p class="kicker">VERTICAL STORY · MINI-SÉRIE · MICRO-DRAMA</p><h1>LES BAD AS</h1><p class="hero-intro">Quatre filles embarquées malgré elles dans un road trip !<br>Une mini-série d'1 minute environ par épisode. Au format vertical.<br>Entre suspense et comédie.</p><div class="actions"><a class="btn" href="#serie">Découvrir la série</a><a class="btn ghost" href="#episodes">Voir les épisodes</a></div></div></section>
@@ -26,5 +26,5 @@
 <section id="auteur" class="section coming"><p class="eyebrow">L’auteur</p><h2>À découvrir prochainement.</h2></section>
 <section id="faq" class="section"><p class="eyebrow">FAQ</p><h2>Questions fréquentes</h2><details><summary>Quel est le format de BAD AS ?</summary><p>Une mini-série verticale composée d’épisodes d’environ une minute.</p></details><details><summary>Quel est le ton de la série ?</summary><p>BAD AS navigue entre suspense et comédie, sur fond de road trip et d’amitié.</p></details></section>
 </main><footer id="contact"><div><strong>BAD AS</strong><p>Une Vertical Story entre suspense et comédie.</p></div><div><span>Contact</span><p>Les coordonnées seront ajoutées prochainement.</p></div><p class="copy">© 2026 BAD AS</p></footer>
-<script>document.querySelector('.menu').onclick=()=>document.querySelector('nav').classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));</script>
+<script>document.querySelector('.menu').onclick=()=>document.querySelector('nav').classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.querySelector('nav').classList.remove('open'));const themeButton=document.querySelector('.theme-toggle');const savedTheme=localStorage.getItem('badas-theme');if(savedTheme==='dark'){document.body.classList.add('dark');themeButton.setAttribute('aria-pressed','true')}themeButton.onclick=()=>{const dark=document.body.classList.toggle('dark');themeButton.setAttribute('aria-pressed',String(dark));localStorage.setItem('badas-theme',dark?'dark':'light')};</script>
 </body></html>
