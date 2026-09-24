@@ -5,3 +5,6 @@
 .author-text .author-role{text-align:center!important;margin-top:0;margin-bottom:28px}
 /* Author portrait: centered within the same text column */
 .author .author-photo{display:block;margin:20px auto 16px!important}.author .author-text{margin-left:auto;margin-right:auto}.author .author-text .author-role{text-align:center!important;margin:0 auto 28px!important}
+
+/* Author section: use one consistent content width so portrait, role and body align */
+.author .author-text,.author .author-video{max-width:none;width:100%;margin-left:auto;margin-right:auto}.author .author-photo{margin-left:auto!important;margin-right:auto!important}.author .author-text .author-role{width:100%;text-align:center!important}
