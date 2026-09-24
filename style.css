@@ -37,3 +37,17 @@ nav a{padding-left:10px;padding-right:10px;white-space:nowrap}
 @media(max-width:1200px){nav{gap:5px}nav a{font-size:14px;padding-left:7px;padding-right:7px}}
 @media(max-width:900px){nav{margin:0;justify-content:flex-start}.lang-toggle{right:145px;top:calc(100% + 8px);margin:0}.theme-toggle{right:12px;top:calc(100% + 8px);margin:0}.hero-copy{padding-top:82px}}
 @media(max-width:520px){.lang-toggle{left:7vw;right:auto;top:calc(100% + 8px)}.theme-toggle{right:7vw;top:calc(100% + 8px)}}
+
+/* Header v2 — clean two-row layout, controls never overlap navigation */
+:root{--cream:#f8efd9}
+body,.top,.hero,.hero-copy{background:var(--cream)}
+.alt,footer{background:#f8efd9}
+.top{position:sticky;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:20px;row-gap:10px;padding:14px 4vw 12px;background:var(--cream)!important}
+.brand{grid-column:1;grid-row:1 / span 2;align-self:center}
+nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:space-between;align-items:center;gap:8px;flex-wrap:nowrap}
+.lang-toggle,.theme-toggle{position:static!important;margin:0!important;top:auto!important;right:auto!important;left:auto!important;box-shadow:0 3px 0 rgba(33,28,24,.12)}
+.lang-toggle{grid-column:2;grid-row:2;justify-self:end;margin-right:155px!important}
+.theme-toggle{grid-column:2;grid-row:2;justify-self:end}
+.hero-copy{padding-top:4.5vw}
+@media(max-width:1200px) and (min-width:901px){nav a{font-size:13px;padding:7px 6px}.top{column-gap:12px;padding-left:2vw;padding-right:2vw}.brand-logo img{width:88px}}
+@media(max-width:900px){.top{display:flex;align-items:center;gap:10px;padding:12px 4vw}.brand{display:flex}.menu{display:block;margin-left:auto}nav{display:none;position:absolute;top:100%;left:0;right:0;width:100%;background:var(--cream);padding:18px 5vw;flex-direction:column;align-items:stretch;border-bottom:2px solid var(--orange);z-index:20}nav.open{display:flex}.lang-toggle,.theme-toggle{position:absolute!important;top:calc(100% + 8px)!important}.lang-toggle{left:5vw!important;right:auto!important;margin:0!important}.theme-toggle{right:5vw!important}.hero-copy{padding-top:82px}}
