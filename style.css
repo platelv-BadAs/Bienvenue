@@ -51,3 +51,16 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 .hero-copy{padding-top:4.5vw}
 @media(max-width:1200px) and (min-width:901px){nav a{font-size:13px;padding:7px 6px}.top{column-gap:12px;padding-left:2vw;padding-right:2vw}.brand-logo img{width:88px}}
 @media(max-width:900px){.top{display:flex;align-items:center;gap:10px;padding:12px 4vw}.brand{display:flex}.menu{display:block;margin-left:auto}nav{display:none;position:absolute;top:100%;left:0;right:0;width:100%;background:var(--cream);padding:18px 5vw;flex-direction:column;align-items:stretch;border-bottom:2px solid var(--orange);z-index:20}nav.open{display:flex}.lang-toggle,.theme-toggle{position:absolute!important;top:calc(100% + 8px)!important}.lang-toggle{left:5vw!important;right:auto!important;margin:0!important}.theme-toggle{right:5vw!important}.hero-copy{padding-top:82px}}
+
+/* Mobile readability + keep hero faces clear of language/theme controls */
+@media(max-width:900px){
+  html,body,button,a,input,textarea,select,summary{font-family:"Comic Sans MS","Comic Sans",cursive!important}
+  nav a,.lang-toggle,.theme-toggle,.btn,.eyebrow,.kicker,.card h3,.section h2,.hero h1{font-family:"Comic Sans MS","Comic Sans",cursive!important}
+  .hero{padding-top:58px}
+  .hero-img{height:62vw;min-height:330px;max-height:520px}
+  .hero-img img{object-position:center 67%}
+}
+@media(max-width:520px){
+  .hero{padding-top:62px}
+  .hero-img{min-height:360px;height:78vw}
+}
