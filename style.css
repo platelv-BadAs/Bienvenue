@@ -64,3 +64,14 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
   .hero{padding-top:62px}
   .hero-img{min-height:360px;height:78vw}
 }
+
+/* Mobile font fallback: phones without Comic Sans MS must stay readable */
+@media(max-width:900px){
+  html,body,button,a,input,textarea,select,summary,
+  nav a,.lang-toggle,.theme-toggle,.btn,.eyebrow,.kicker,.card h3,.section h2,.hero h1,
+  .hero-copy,.story,.card,.author-text,details,footer{
+    font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Arial Rounded MT Bold",Arial,sans-serif!important;
+    font-style:normal!important;
+  }
+  .hero h1,.section h2,.card h3,nav a,.eyebrow,.kicker{font-style:normal!important}
+}
