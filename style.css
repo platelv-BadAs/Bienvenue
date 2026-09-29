@@ -127,3 +127,9 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 /* English Series — match the compact French typography */
 #series h2,#series .story blockquote{font-size:20px!important;line-height:1.55!important;letter-spacing:.02em}
 @media(max-width:520px){#series h2,#series .story blockquote{font-size:19px!important}}
+
+/* English Series mobile — force compact size on all phones/tablets */
+@media(max-width:900px){
+  #series.section h2{font-size:19px!important;line-height:1.45!important}
+  #series .story blockquote{font-size:19px!important;line-height:1.45!important;margin-top:30px;padding:0!important;border-left:0!important;transform:none!important}
+}
