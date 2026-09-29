@@ -133,3 +133,22 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
   #series.section h2{font-size:19px!important;line-height:1.45!important}
   #series .story blockquote{font-size:19px!important;line-height:1.45!important;margin-top:30px;padding:0!important;border-left:0!important;transform:none!important}
 }
+
+/* Episodes — compact 3-column gallery inspired by streaming cards */
+#episodes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+#episodes>.eyebrow{grid-column:1/-1;justify-self:start;margin-bottom:2px}
+#episodes>h2{font-size:18px!important;margin:0 0 8px;text-align:center;grid-row:auto}
+#episodes>.episode-video{width:100%!important;aspect-ratio:1/1!important;margin:0!important;border-radius:16px!important;box-shadow:4px 4px 0 rgba(25,174,181,.18)!important}
+#episodes>.episode-video iframe{width:100%;height:100%}
+#episodes>.episode-youtube{margin:0 0 16px!important;text-align:center!important}
+#episodes>.episode-youtube a{font-size:13px!important;padding:9px 12px!important;width:100%;box-sizing:border-box}
+/* Place each episode title, thumbnail and button in the same column */
+#episodes>h2:nth-of-type(1),#episodes>.episode-video:nth-of-type(1),#episodes>.episode-youtube:nth-of-type(1){grid-column:1}
+#episodes>h2:nth-of-type(2),#episodes>.episode-video:nth-of-type(2),#episodes>.episode-youtube:nth-of-type(2){grid-column:2}
+#episodes>h2:nth-of-type(3),#episodes>.episode-video:nth-of-type(3),#episodes>.episode-youtube:nth-of-type(3){grid-column:3}
+@media(max-width:700px){
+ #episodes{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding-left:3vw;padding-right:3vw}
+ #episodes>h2{font-size:14px!important;margin-bottom:3px}
+ #episodes>.episode-video{border-radius:10px!important}
+ #episodes>.episode-youtube a{font-size:10px!important;line-height:1.2;padding:7px 3px!important;box-shadow:0 2px 0 rgba(33,28,24,.16)}
+}
