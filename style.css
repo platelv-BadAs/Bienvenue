@@ -93,3 +93,8 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 /* Series typography fine-tuning */
 #serie h2,#serie .story blockquote{font-size:20px!important}
 @media(max-width:520px){#serie h2,#serie .story blockquote{font-size:19px!important}}
+
+/* Series closing line + official YouTube callout */
+#serie .story blockquote{margin-top:30px;padding:0;border-left:0!important;transform:none}
+#serie .youtube-subscribe{margin-top:24px;padding:14px 18px;background:var(--orange);color:#fff;border-radius:16px 6px 16px 6px;font-size:18px;font-weight:900;text-align:left;box-shadow:4px 4px 0 rgba(33,28,24,.14)}
+#serie .youtube-subscribe a{color:#fff;text-decoration:underline;overflow-wrap:anywhere}
