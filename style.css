@@ -173,3 +173,12 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 /* Characters title — pink accent matching the homepage diamond */
 #personnages>h2,#characters>h2{color:#e44f8b!important;text-shadow:2px 2px 0 rgba(255,255,255,.7),3px 3px 0 rgba(33,28,24,.10)}
 body.dark #personnages>h2,body.dark #characters>h2{text-shadow:2px 2px 0 rgba(0,0,0,.45)}
+
+/* Photo gallery — LES BAD AS */
+.photo-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:24px}
+.gallery-item{display:block;text-decoration:none;color:var(--ink);text-align:center;min-width:0}
+.gallery-item img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:2px solid rgba(255,255,255,.65);box-shadow:0 4px 0 rgba(33,28,24,.13),0 7px 14px rgba(33,28,24,.10);transition:transform .18s ease}
+.gallery-item:hover img{transform:translateY(-3px) rotate(-1deg)}
+.gallery-item span{display:block;margin-top:7px;font-size:12px;font-weight:700}
+body.dark .gallery-item{color:#fff}
+@media(max-width:900px){.photo-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.gallery-item img{border-radius:10px}.gallery-item span{font-size:10px;margin-top:5px}}
