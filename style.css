@@ -169,3 +169,7 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 #episodes .episodes-grid{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:flex-start!important;justify-content:center!important;gap:18px!important;width:100%!important}
 #episodes .episode-card{display:block!important;flex:1 1 0!important;width:0!important;max-width:300px!important;min-width:0!important;margin:0!important;float:none!important;transform:none!important}
 @media(max-width:700px){#episodes .episodes-grid{gap:6px!important}#episodes .episode-card{flex:1 1 0!important;width:0!important;max-width:none!important}}
+
+/* Characters title — pink accent matching the homepage diamond */
+#personnages>h2,#characters>h2{color:#e44f8b!important;text-shadow:2px 2px 0 rgba(255,255,255,.7),3px 3px 0 rgba(33,28,24,.10)}
+body.dark #personnages>h2,body.dark #characters>h2{text-shadow:2px 2px 0 rgba(0,0,0,.45)}
