@@ -117,3 +117,9 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 .episode-video iframe{display:block;width:100%;height:100%;border:0}
 .episode-youtube{text-align:center;margin:14px 0 0;font-weight:900}
 .episode-youtube a{display:inline-block;padding:10px 16px;border-radius:999px;background:var(--orange);color:#fff;text-decoration:none;box-shadow:0 4px 0 rgba(33,28,24,.16)}
+
+/* Episodes — compact thumbnails */
+.episode-video{width:min(100%,240px)!important;margin:18px auto 10px!important;border-radius:16px!important}
+.episode-youtube{text-align:center!important;margin:10px auto 28px!important}
+.episode-youtube a{font-size:15px!important;text-align:center}
+@media(max-width:520px){.episode-video{width:min(72vw,210px)!important}.episode-youtube a{font-size:14px!important}}
