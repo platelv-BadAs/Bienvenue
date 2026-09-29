@@ -182,3 +182,10 @@ body.dark #personnages>h2,body.dark #characters>h2{text-shadow:2px 2px 0 rgba(0,
 .gallery-item span{display:block;margin-top:7px;font-size:12px;font-weight:700}
 body.dark .gallery-item{color:#fff}
 @media(max-width:900px){.photo-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.gallery-item img{border-radius:10px}.gallery-item span{font-size:10px;margin-top:5px}}
+
+/* Gallery — force genuinely small thumbnails */
+.photo-gallery{display:grid!important;grid-template-columns:repeat(5,140px)!important;justify-content:center!important;gap:14px!important;width:100%!important}
+.photo-gallery .gallery-item{display:block!important;width:140px!important;max-width:140px!important;margin:0!important}
+.photo-gallery .gallery-item img{display:block!important;width:140px!important;height:175px!important;max-width:140px!important;object-fit:cover!important;margin:0!important;border-radius:12px!important}
+@media(max-width:900px){.photo-gallery{grid-template-columns:repeat(3,90px)!important;gap:8px!important}.photo-gallery .gallery-item{width:90px!important;max-width:90px!important}.photo-gallery .gallery-item img{width:90px!important;height:112px!important;max-width:90px!important}}
+@media(max-width:340px){.photo-gallery{grid-template-columns:repeat(3,82px)!important}.photo-gallery .gallery-item,.photo-gallery .gallery-item img{width:82px!important;max-width:82px!important}.photo-gallery .gallery-item img{height:103px!important}}
