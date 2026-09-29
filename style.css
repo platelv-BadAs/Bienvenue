@@ -123,3 +123,7 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 .episode-youtube{text-align:center!important;margin:10px auto 28px!important}
 .episode-youtube a{font-size:15px!important;text-align:center}
 @media(max-width:520px){.episode-video{width:min(72vw,210px)!important}.episode-youtube a{font-size:14px!important}}
+
+/* English Series — match the compact French typography */
+#series h2,#series .story blockquote{font-size:20px!important;line-height:1.55!important;letter-spacing:.02em}
+@media(max-width:520px){#series h2,#series .story blockquote{font-size:19px!important}}
