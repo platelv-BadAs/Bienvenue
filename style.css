@@ -102,3 +102,8 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 /* Section labels — same visual size as main action buttons */
 .section>.eyebrow{font-size:18px!important;font-weight:900}
 @media(max-width:520px){.section>.eyebrow{font-size:17px!important}}
+
+/* Character names — slightly more discreet */
+.card h3{font-size:25px!important;line-height:1.15}
+.card h3 small{font-size:14px!important}
+@media(max-width:520px){.card h3{font-size:23px!important}}
