@@ -98,3 +98,7 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 #serie .story blockquote{margin-top:30px;padding:0;border-left:0!important;transform:none}
 #serie .youtube-subscribe{margin-top:24px;padding:14px 18px;background:var(--orange);color:#fff;border-radius:16px 6px 16px 6px;font-size:18px;font-weight:900;text-align:left;box-shadow:4px 4px 0 rgba(33,28,24,.14)}
 #serie .youtube-subscribe a{color:#fff;text-decoration:underline;overflow-wrap:anywhere}
+
+/* Section labels — same visual size as main action buttons */
+.section>.eyebrow{font-size:18px!important;font-weight:900}
+@media(max-width:520px){.section>.eyebrow{font-size:17px!important}}
