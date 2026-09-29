@@ -81,3 +81,6 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 
 /* Series headline — more compact */
 #serie h2{font-size:clamp(26px,2.8vw,42px);line-height:1.12}
+
+/* Series closing quote — more compact */
+#serie .story blockquote{font-size:clamp(23px,3vw,38px);line-height:1.12}
