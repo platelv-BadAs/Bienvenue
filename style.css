@@ -152,3 +152,15 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
  #episodes>.episode-video{border-radius:10px!important}
  #episodes>.episode-youtube a{font-size:10px!important;line-height:1.2;padding:7px 3px!important;box-shadow:0 2px 0 rgba(33,28,24,.16)}
 }
+
+/* Episodes grid fix — cards stay aligned */
+#episodes{display:block!important}
+#episodes>.eyebrow{display:inline-block!important;margin-bottom:20px}
+.episodes-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;align-items:start!important;width:100%}
+.episode-card{min-width:0;text-align:center}
+#episodes .episode-card h2{font-size:18px!important;line-height:1.2;margin:0 0 8px!important}
+#episodes .episode-card .episode-video{width:100%!important;aspect-ratio:1/1!important;margin:0 auto 10px!important;border-radius:14px!important;overflow:hidden}
+#episodes .episode-card .episode-video iframe{display:block;width:100%!important;height:100%!important;border:0}
+#episodes .episode-card .episode-youtube{margin:0!important;text-align:center!important}
+#episodes .episode-card .episode-youtube a{display:block!important;width:100%!important;box-sizing:border-box;font-size:13px!important;padding:9px 6px!important}
+@media(max-width:700px){.episodes-grid{gap:7px!important}.section#episodes{padding-left:3vw!important;padding-right:3vw!important}#episodes .episode-card h2{font-size:13px!important}#episodes .episode-card .episode-video{border-radius:9px!important;margin-bottom:6px!important}#episodes .episode-card .episode-youtube a{font-size:9px!important;line-height:1.15!important;padding:7px 2px!important}}
