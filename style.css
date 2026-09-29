@@ -75,3 +75,6 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
   }
   .hero h1,.section h2,.card h3,nav a,.eyebrow,.kicker{font-style:normal!important}
 }
+
+/* Homepage diamond-painting bullets */
+.hero-diamonds{margin:18px 0 4px}.hero-diamonds p{position:relative;margin:10px 0;padding-left:28px}.hero-diamonds p:before{content:"◆";position:absolute;left:2px;top:.02em;font-size:17px;color:var(--turquoise);text-shadow:1px 1px 0 #fff,2px 2px 0 rgba(33,28,24,.14)}.hero-diamonds p:nth-child(even):before{color:var(--orange)}.hero-diamonds p:nth-child(3n):before{transform:rotate(45deg);color:#e44f8b}body.dark .hero-diamonds p:before{text-shadow:1px 1px 0 #000,2px 2px 0 rgba(255,255,255,.08)}
