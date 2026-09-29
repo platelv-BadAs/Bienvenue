@@ -84,3 +84,8 @@ nav{grid-column:2;grid-row:1;display:flex;margin:0;width:100%;justify-content:sp
 
 /* Series closing quote — more compact */
 #serie .story blockquote{font-size:clamp(23px,3vw,38px);line-height:1.12}
+
+/* Series typography balance — match action-button scale */
+#serie h2{font-size:18px!important;line-height:1.55!important;letter-spacing:.02em}
+#serie .story blockquote{font-size:18px!important;line-height:1.55!important;letter-spacing:.02em}
+@media(max-width:520px){#serie h2,#serie .story blockquote{font-size:17px!important}}
